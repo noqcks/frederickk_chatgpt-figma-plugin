@@ -6,7 +6,7 @@ import {IConfig} from './chat-rules';
  */
 export class ChatConfigure {
   private parsers_: any[] = [];
-  private api_!: ChatGPTAPI | ChatGPTAPIBrowser;
+  private api_!: ChatGPTAPI;
 
   public conversationId: string = '';
   public messageId: string = '';
