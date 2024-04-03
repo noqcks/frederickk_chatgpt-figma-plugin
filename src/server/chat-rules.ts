@@ -75,7 +75,7 @@ const Lexica = {
   parse: async (reply: IChatResponseParse) => {
     // Match anything between {{ }}
     const regex = /\{\{([^\]]+?)\}\}/g;
-    const urls = await findRegexMatches(regex, reply.text, async (str) => {
+    const urls = await findRegexMatches(regex, reply.message, async (str) => {
       const imageUrl = await fetch(
         `https://lexica.art/api/v1/search?q=${encodeURIComponent(str)}`, {
           method: 'GET',
