@@ -1,4 +1,4 @@
-import {ChatGPTAPI, ChatGPTAPIBrowser} from 'chatgpt';
+import {ChatGPTAPI} from 'chatgpt';
 import {IConfig} from './chat-rules';
 
 /**
