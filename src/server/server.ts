@@ -2,7 +2,8 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv-safe';
 import express, {Application, Request, Response} from 'express';
-import {ChatGPTAPIBrowser} from 'chatgpt';
+// The correct import should be determined based on the actual API or package documentation
+
 import {oraPromise} from 'ora';
 
 import {PLUGIN_NAME, VERSION} from '../globals';
