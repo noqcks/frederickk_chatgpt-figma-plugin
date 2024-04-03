@@ -45,7 +45,7 @@ export class ChatConfigure {
     `;
     const reply = await this.api_.sendMessage(message);
     this.conversationId = reply.conversationId || '';
-    this.messageId = reply.messageId;
+    this.messageId = reply.id;
 
     return reply;
   };
