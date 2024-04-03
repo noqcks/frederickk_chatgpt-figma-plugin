@@ -54,7 +54,7 @@ const Image = {
   parse: async (reply: IChatResponseParse) => {
     // Match urls within Markdown image tag
     const regex = /!\[[^\]]*\]\((?<filename>.*?)(?=\"|\))(?<optionalpart>\".*\")?\)/g;
-    const urls = await findRegexMatches(regex, reply.content, (str) => {
+    const urls = await findRegexMatches(regex, reply.text, (str) => {
       return str;
     });
     reply.imageUrl = [...reply.imageUrl, ...urls];
