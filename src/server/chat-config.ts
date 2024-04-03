@@ -44,7 +44,7 @@ export class ChatConfigure {
       ${this.rules.map((rule) => `\n- ${rule}`)}
     `;
     const reply = await this.api_.sendMessage(message);
-    this.conversationId = reply.conversationId;
+    this.conversationId = reply.conversationId || '';
     this.messageId = reply.messageId;
 
     return reply;
