@@ -2,7 +2,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv-safe';
 import express, {Application, Request, Response} from 'express';
-import {ChatGPTAPIBrowser} from 'chatgpt';
+// import {ChatGPTAPIBrowser} from 'chatgpt';
 import {oraPromise} from 'ora';
 
 import {PLUGIN_NAME, VERSION} from '../globals';
