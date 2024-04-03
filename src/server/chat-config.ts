@@ -12,7 +12,7 @@ export class ChatConfigure {
   public messageId: string = '';
   public rules: any[] = [];
 
-  constructor({plugins}: IConfig, api: ChatGPTAPI | ChatGPTAPIBrowser) {
+  constructor({plugins}: IConfig, api: ChatGPTAPI) {
     this.api_ = api;
 
     // Collect rules and parsers from all plugins
